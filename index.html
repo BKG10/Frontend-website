@@ -113,6 +113,139 @@
             </div>
         </section>
 
+        <!-- Chrome Extension Section -->
+        <section class="extension-section" data-aos="fade-up">
+            <div class="container">
+                <div class="extension-content">
+                    <div class="extension-text">
+                        <h2>Get Our Chrome Extension</h2>
+                        <p>Enhance your browsing security with our powerful Chrome extension. Get real-time protection against phishing attempts while you browse.</p>
+                        <div class="extension-features">
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Real-time Protection</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bolt"></i>
+                                <span>Instant Analysis</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-lock"></i>
+                                <span>Privacy Focused</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/BKG10/Phish-Shield" class="download-btn" target="_blank">
+                            <i class="fab fa-chrome"></i>
+                            Download Extension
+                        </a>
+                    </div>
+                    <div class="extension-image">
+                        <img src="image/icon48.png" alt="PhishShield Extension">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .extension-section {
+                padding: 4rem 0;
+                background: linear-gradient(135deg, rgba(74, 107, 255, 0.05) 0%, rgba(74, 107, 255, 0.02) 100%);
+            }
+
+            .extension-content {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 4rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .extension-text {
+                flex: 1;
+            }
+
+            .extension-text h2 {
+                font-size: 2.5rem;
+                color: var(--primary-color);
+                margin-bottom: 1.5rem;
+            }
+
+            .extension-text p {
+                font-size: 1.2rem;
+                color: var(--text-color);
+                margin-bottom: 2rem;
+                line-height: 1.6;
+            }
+
+            .extension-features {
+                display: flex;
+                gap: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .feature {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .feature i {
+                color: var(--primary-color);
+                font-size: 1.2rem;
+            }
+
+            .feature span {
+                color: var(--text-color);
+                font-weight: 500;
+            }
+
+            .download-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 1rem 2rem;
+                background: var(--primary-color);
+                color: white;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .download-btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(74, 107, 255, 0.2);
+            }
+
+            .extension-image {
+                flex: 1;
+                text-align: center;
+            }
+
+            .extension-image img {
+                max-width: 200px;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            }
+
+            @media (max-width: 768px) {
+                .extension-content {
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .extension-features {
+                    justify-content: center;
+                }
+
+                .extension-image {
+                    order: -1;
+                }
+            }
+        </style>
+
         <!-- Statistics Section with Animation -->
         <section id="statistics" class="stats-section">
             <h2>Real-time Protection Statistics</h2>
@@ -263,7 +396,7 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, PhishShield offers a free plan with up to 100 URL scans per month. For unlimited scans and advanced features, check our Pro plan.</p>
+                        <p>Yes, PhishShield is completely free to use.</p>
                     </div>
                 </div>
                 <div class="faq-item" data-aos="fade-up">
