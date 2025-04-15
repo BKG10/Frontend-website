@@ -1664,4 +1664,89 @@ button:hover {
     .future-work-content {
         grid-template-columns: 1fr;
     }
+}
+
+/* Team Section */
+.team-section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.team-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-card.mentor {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.team-card.mentor .team-icon {
+    background: white;
+    color: var(--primary-color);
+}
+
+.team-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.team-card.mentor h3 {
+    color: white;
+}
+
+.team-card p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.team-card.mentor p {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
 } 
