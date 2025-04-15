@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for SEO and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhishShield - Advanced Phishing Detection</title>
     <meta name="description" content="Protect yourself from phishing attacks with AI-powered URL detection. Free, fast, and reliable phishing detection service.">
+    
+    <!-- External CSS dependencies -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link rel="icon" type="image/png" href="image/icon48.png">
-    <!-- Add notification library -->
+    <!-- Notification library for user feedback -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
 </head>
 <body>
-    <!-- Announcement Banner -->
+    <!-- Announcement banner for new features/updates -->
     <div class="announcement-banner">
         <div class="announcement-content">
             <i class="fas fa-bullhorn"></i>
@@ -23,7 +26,7 @@
         </div>
     </div>
 
-    <!-- Navigation Bar -->
+    <!-- Main navigation bar with logo and menu items -->
     <nav class="navbar">
         <div class="nav-content">
             <div class="nav-logo">
@@ -41,13 +44,16 @@
     </nav>
 
     <div class="container">
-        <!-- Hero Section with Particles Background -->
+        <!-- Interactive particles background for visual appeal -->
         <div id="particles-js"></div>
+        
+        <!-- Hero section with main URL input functionality -->
         <section class="hero-section">
             <div class="hero-content">
                 <h1>Protect Yourself from Phishing Attacks</h1>
                 <p class="hero-subtitle">Advanced AI-powered URL detection to keep you safe online</p>
                 
+                <!-- URL input form with search functionality -->
                 <div class="search-container">
                     <div class="input-wrapper">
                         <i class="fas fa-link input-icon"></i>
@@ -59,6 +65,7 @@
                     </button>
                 </div>
 
+                <!-- Trust indicators to build user confidence -->
                 <div class="trust-badges">
                     <div class="badge">
                         <i class="fas fa-check-circle"></i>
@@ -75,15 +82,18 @@
                 </div>
             </div>
 
+            <!-- Loading indicator for URL analysis -->
             <div id="loadingIndicator" class="hidden">
                 <div class="spinner"></div>
                 <p>Analyzing URL...</p>
             </div>
 
+            <!-- Error message container -->
             <div id="errorContainer" class="hidden">
                 <div class="error-message"></div>
             </div>
 
+            <!-- Results display container -->
             <div id="resultContainer" class="hidden">
                 <div class="result-card">
                     <div id="statusIcon"></div>
@@ -113,140 +123,7 @@
             </div>
         </section>
 
-        <!-- Chrome Extension Section -->
-        <section class="extension-section" data-aos="fade-up">
-            <div class="container">
-                <div class="extension-content">
-                    <div class="extension-text">
-                        <h2>Get Our Chrome Extension</h2>
-                        <p>Enhance your browsing security with our powerful Chrome extension. Get real-time protection against phishing attempts while you browse.</p>
-                        <div class="extension-features">
-                            <div class="feature">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Real-time Protection</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-bolt"></i>
-                                <span>Instant Analysis</span>
-                            </div>
-                            <div class="feature">
-                                <i class="fas fa-lock"></i>
-                                <span>Privacy Focused</span>
-                            </div>
-                        </div>
-                        <a href="https://github.com/BKG10/Phish-Shield" class="download-btn" target="_blank">
-                            <i class="fab fa-chrome"></i>
-                            Download Extension
-                        </a>
-                    </div>
-                    <div class="extension-image">
-                        <img src="image/icon48.png" alt="PhishShield Extension">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <style>
-            .extension-section {
-                padding: 4rem 0;
-                background: linear-gradient(135deg, rgba(74, 107, 255, 0.05) 0%, rgba(74, 107, 255, 0.02) 100%);
-            }
-
-            .extension-content {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 4rem;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-
-            .extension-text {
-                flex: 1;
-            }
-
-            .extension-text h2 {
-                font-size: 2.5rem;
-                color: var(--primary-color);
-                margin-bottom: 1.5rem;
-            }
-
-            .extension-text p {
-                font-size: 1.2rem;
-                color: var(--text-color);
-                margin-bottom: 2rem;
-                line-height: 1.6;
-            }
-
-            .extension-features {
-                display: flex;
-                gap: 2rem;
-                margin-bottom: 2rem;
-            }
-
-            .feature {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-            }
-
-            .feature i {
-                color: var(--primary-color);
-                font-size: 1.2rem;
-            }
-
-            .feature span {
-                color: var(--text-color);
-                font-weight: 500;
-            }
-
-            .download-btn {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.5rem;
-                padding: 1rem 2rem;
-                background: var(--primary-color);
-                color: white;
-                border-radius: 50px;
-                text-decoration: none;
-                font-weight: 600;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-
-            .download-btn:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 10px 20px rgba(74, 107, 255, 0.2);
-            }
-
-            .extension-image {
-                flex: 1;
-                text-align: center;
-            }
-
-            .extension-image img {
-                max-width: 200px;
-                height: auto;
-                border-radius: 20px;
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            }
-
-            @media (max-width: 768px) {
-                .extension-content {
-                    flex-direction: column;
-                    text-align: center;
-                }
-
-                .extension-features {
-                    justify-content: center;
-                }
-
-                .extension-image {
-                    order: -1;
-                }
-            }
-        </style>
-
-        <!-- Statistics Section with Animation -->
+        <!-- Statistics section showing real-time protection metrics -->
         <section id="statistics" class="stats-section">
             <h2>Real-time Protection Statistics</h2>
             <div class="stats-container">
@@ -289,7 +166,7 @@
             </div>
         </section>
 
-        <!-- Features Section with Icons -->
+        <!-- Features section highlighting key product benefits -->
         <section id="features" class="features-section">
             <h2>Why Choose PhishShield?</h2>
             <div class="features-grid">
@@ -328,7 +205,7 @@
             </div>
         </section>
 
-        <!-- Recent Scans Section -->
+        <!-- Recent scans history section -->
         <div id="historyContainer" class="history-container hidden">
             <div class="history-header">
                 <div class="history-title">
@@ -343,7 +220,7 @@
             <div id="historyList" class="history-list"></div>
         </div>
 
-        <!-- How It Works Section with Timeline -->
+        <!-- How it works section with visual timeline -->
         <section id="how-it-works" class="how-it-works-section">
             <h2>How PhishShield Works</h2>
             <div class="timeline">
@@ -377,7 +254,7 @@
             </div>
         </section>
 
-        <!-- FAQ Section with Accordion -->
+        <!-- FAQ section with expandable accordion -->
         <section id="faq" class="faq-section">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-container">
@@ -396,7 +273,7 @@
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, PhishShield is completely free to use.</p>
+                        <p>Yes, PhishShield offers a free plan with up to 100 URL scans per month. For unlimited scans and advanced features, check our Pro plan.</p>
                     </div>
                 </div>
                 <div class="faq-item" data-aos="fade-up">
@@ -420,7 +297,7 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- Call-to-action section for user conversion -->
         <section class="cta-section">
             <div class="cta-content">
                 <h2>Ready to Protect Yourself?</h2>
@@ -432,7 +309,42 @@
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- Team section -->
+        <section class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-container">
+                <div class="team-card mentor" data-aos="fade-up">
+                    <div class="team-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Mentor</h3>
+                    <p>Dr. Mohankumar B</p>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Team Member</h3>
+                    <p>Sameer Raj</p>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Team Member</h3>
+                    <p>Bharat Kumar Garg</p>
+                </div>
+                <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Team Member</h3>
+                    <p>Kushagra Sharma</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer section with site navigation and legal links -->
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-section">
@@ -475,13 +387,13 @@
         </footer>
     </div>
 
-    <!-- Scripts -->
+    <!-- External JavaScript dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <script src="script.js"></script>
 
-    <!-- Add this right before the closing body tag -->
+    <!-- Screenshot overlay for sharing results -->
     <div class="screenshot-overlay" id="screenshotOverlay">
         <div class="screenshot-content">
             <button class="close-screenshot" id="closeScreenshot">×</button>
